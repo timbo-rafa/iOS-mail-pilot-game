@@ -20,6 +20,9 @@ class GameScene: SKScene {
     //Game Variables
     var oceanSprite: Ocean?
     var planeSprite: Plane?
+    var islandSprite: Island?
+    //var cloudSprite: Cloud?
+    var cloudSprites: [Cloud] = []
     
     override func didMove(to view: SKView) {
         print("GameScene.didMove")
@@ -31,6 +34,10 @@ class GameScene: SKScene {
         self.oceanSprite = Ocean()
         self.addChild(self.oceanSprite!)
         
+        //add island
+        self.islandSprite = Island()
+        self.addChild(self.islandSprite!)
+        
         // add plane
         self.planeSprite = Plane()
         self.planeSprite?.position = CGPoint(x: screenWidth! * 0.5, y: 50.0)
@@ -39,6 +46,14 @@ class GameScene: SKScene {
         let engineSound = SKAudioNode(fileNamed: "engine.mp3")
         self.addChild(engineSound)
         engineSound.autoplayLooped = true
+        
+        // add clouds
+        
+        for index in 0...2 {
+            let cloud: Cloud = Cloud()
+            cloudSprites.append(cloud)
+            self.addChild(cloudSprites[index])
+        }
         
         //preload sounds
         do {
@@ -89,5 +104,14 @@ class GameScene: SKScene {
     override func update(_ currentTime: TimeInterval) {
         self.oceanSprite?.Update()
         self.planeSprite?.Update()
+        self.islandSprite?.Update()
+        
+        CollisionManager.CheckCollision(scene: self, object1: planeSprite!, object2: islandSprite!)
+        
+        for cloud in cloudSprites {
+            cloud.Update()
+            
+            CollisionManager.CheckCollision(scene: self, object1: planeSprite!, object2: cloud)
+        }
     }
 }

@@ -1,27 +1,31 @@
 
 import SpriteKit
+import GameplayKit
 
-class Ocean: GameObject {
+class Island: GameObject {
     // constructor
     init() {
         // initialize the object with an image
-        super.init(imageString: "ocean", initialScale:1.0)
+        super.init(imageString: "island", initialScale:1.0)
         Start()
     }
     
     override func Start() {
-        self.zPosition = 0
-        self.anchorPoint = CGPoint.zero
-        //how fast the ocean is gonna go down
+        //how fast the island is gonna go down
+        self.zPosition = 1
+        self.Reset()
         self.dy = 5.0
     }
     
     override func Reset() {
-        self.position = CGPoint.zero
+        //change 700 to screenHeight
+        self.position.y = 700 + self.height!;
+        let randomX:Int = (randomSource?.nextInt(upperBound: Int(screenWidth! - self.width!)))! + Int(self.halfwidth!)
+        self.position.x = CGFloat(randomX)
     }
     
     override func CheckBounds() {
-        if (self.position.y < -780) {
+        if (self.position.y < ( 0 - self.height!)) {
             self.Reset()
         }
     }

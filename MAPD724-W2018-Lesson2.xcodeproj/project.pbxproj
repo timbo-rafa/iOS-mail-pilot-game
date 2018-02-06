@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FD6DC722029301C0015B441 /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD6DC712029301C0015B441 /* Island.swift */; };
+		3FD6DC76202941210015B441 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD6DC75202941210015B441 /* Cloud.swift */; };
+		3FD6DC7A202949910015B441 /* Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD6DC79202949910015B441 /* Distance.swift */; };
+		3FD6DC8020294BDA0015B441 /* CollisionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD6DC7F20294BDA0015B441 /* CollisionManager.swift */; };
 		3FD7C776201FEC1300945FEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD7C775201FEC1300945FEF /* AppDelegate.swift */; };
 		3FD7C778201FEC1300945FEF /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3FD7C777201FEC1300945FEF /* GameScene.sks */; };
 		3FD7C77A201FEC1300945FEF /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3FD7C779201FEC1300945FEF /* Actions.sks */; };
@@ -28,6 +32,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3FD6DC712029301C0015B441 /* Island.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
+		3FD6DC75202941210015B441 /* Cloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
+		3FD6DC79202949910015B441 /* Distance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Distance.swift; sourceTree = "<group>"; };
+		3FD6DC7F20294BDA0015B441 /* CollisionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollisionManager.swift; sourceTree = "<group>"; };
 		3FD7C772201FEC1300945FEF /* MAPD724-W2018-Lesson2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAPD724-W2018-Lesson2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD7C775201FEC1300945FEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FD7C777201FEC1300945FEF /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -61,6 +69,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3FD6DC7E20294BCD0015B441 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				3FD6DC7F20294BDA0015B441 /* CollisionManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
 		3FD7C769201FEC1300945FEF = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +96,7 @@
 		3FD7C774201FEC1300945FEF /* MAPD724-W2018-Lesson2 */ = {
 			isa = PBXGroup;
 			children = (
+				3FD6DC7E20294BCD0015B441 /* Managers */,
 				3FD7C79A2020053000945FEF /* Objects */,
 				3FD7C797201FF8B900945FEF /* Scenes */,
 				3FD7C775201FEC1300945FEF /* AppDelegate.swift */,
@@ -115,6 +132,9 @@
 				3FD7C79D202008FD00945FEF /* GameProtocol.swift */,
 				3FD7C79F2020098C00945FEF /* Plane.swift */,
 				3FD7C7A12020130500945FEF /* Ocean.swift */,
+				3FD6DC712029301C0015B441 /* Island.swift */,
+				3FD6DC75202941210015B441 /* Cloud.swift */,
+				3FD6DC79202949910015B441 /* Distance.swift */,
 			);
 			name = Objects;
 			sourceTree = "<group>";
@@ -199,10 +219,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FD6DC8020294BDA0015B441 /* CollisionManager.swift in Sources */,
 				3FD7C77C201FEC1300945FEF /* GameScene.swift in Sources */,
 				3FD7C77E201FEC1300945FEF /* GameViewController.swift in Sources */,
+				3FD6DC722029301C0015B441 /* Island.swift in Sources */,
 				3FD7C776201FEC1300945FEF /* AppDelegate.swift in Sources */,
+				3FD6DC7A202949910015B441 /* Distance.swift in Sources */,
 				3FD7C799201FF96700945FEF /* StartScene.swift in Sources */,
+				3FD6DC76202941210015B441 /* Cloud.swift in Sources */,
 				3FD7C7A22020130500945FEF /* Ocean.swift in Sources */,
 				3FD7C79C2020054600945FEF /* GameObject.swift in Sources */,
 				3FD7C79E202008FD00945FEF /* GameProtocol.swift in Sources */,
