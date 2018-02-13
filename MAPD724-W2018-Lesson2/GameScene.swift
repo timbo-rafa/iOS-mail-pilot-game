@@ -23,12 +23,14 @@ class GameScene: SKScene {
     var islandSprite: Island?
     //var cloudSprite: Cloud?
     var cloudSprites: [Cloud] = []
+    var livesLabel: Label?
+    var scoreLabel: Label?
     
     override func didMove(to view: SKView) {
         print("GameScene.didMove")
         
-        screenWidth = screenSize.width
-        screenHeight = screenSize.height
+        screenWidth = frame.width
+        screenHeight = frame.height
         
         // add ocean
         self.oceanSprite = Ocean()
@@ -48,12 +50,19 @@ class GameScene: SKScene {
         engineSound.autoplayLooped = true
         
         // add clouds
-        
         for index in 0...2 {
             let cloud: Cloud = Cloud()
             cloudSprites.append(cloud)
             self.addChild(cloudSprites[index])
         }
+        
+        //add a label
+        
+        livesLabel = Label(labelString: "Lives: 5", position: CGPoint(x: 20.0, y: frame.height - 20.0), fontSize: 30.0, fontName: "Dock51", fontColor: SKColor.yellow, isCentered: false)
+        self.addChild(livesLabel!)
+        
+        scoreLabel = Label(labelString: "Score: 99999", position: CGPoint(x: frame.width * 0.45, y:frame.height - 20.0), fontSize: 30.0, fontName: "Dock51", fontColor: SKColor.yellow, isCentered: false)
+        self.addChild(scoreLabel!)
         
         //preload sounds
         do {
@@ -112,6 +121,19 @@ class GameScene: SKScene {
             cloud.Update()
             
             CollisionManager.CheckCollision(scene: self, object1: planeSprite!, object2: cloud)
+        }
+        
+        if (ScoreManager.Lives > 0) {
+            //Update Labels
+            livesLabel?.text = "Lives: \(ScoreManager.Lives)"
+            scoreLabel?.text = "Score: \(ScoreManager.Score)"
+        } else {
+            if let view = self.view {
+                if let scene = GameScene(fileNamed: "GameOverScene") {
+                    scene.scaleMode = .aspectFit // make sure the game fits
+                    view.presentScene(scene)
+                }
+            }
         }
     }
 }

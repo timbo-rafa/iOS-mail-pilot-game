@@ -29,6 +29,10 @@
 		3FD7C79E202008FD00945FEF /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD7C79D202008FD00945FEF /* GameProtocol.swift */; };
 		3FD7C7A02020098C00945FEF /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD7C79F2020098C00945FEF /* Plane.swift */; };
 		3FD7C7A22020130500945FEF /* Ocean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD7C7A12020130500945FEF /* Ocean.swift */; };
+		3FEB676B20326875003C8C39 /* ScoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEB676A20326875003C8C39 /* ScoreManager.swift */; };
+		3FEB676D20327D57003C8C39 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEB676C20327D57003C8C39 /* Label.swift */; };
+		3FEB676F20328837003C8C39 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEB676E20328837003C8C39 /* GameOverScene.swift */; };
+		3FEB677120328861003C8C39 /* GameOverScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3FEB677020328861003C8C39 /* GameOverScene.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +60,10 @@
 		3FD7C79D202008FD00945FEF /* GameProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
 		3FD7C79F2020098C00945FEF /* Plane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
 		3FD7C7A12020130500945FEF /* Ocean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ocean.swift; sourceTree = "<group>"; };
+		3FEB676A20326875003C8C39 /* ScoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreManager.swift; sourceTree = "<group>"; };
+		3FEB676C20327D57003C8C39 /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		3FEB676E20328837003C8C39 /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		3FEB677020328861003C8C39 /* GameOverScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOverScene.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				3FD6DC7F20294BDA0015B441 /* CollisionManager.swift */,
+				3FEB676A20326875003C8C39 /* ScoreManager.swift */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -117,8 +126,10 @@
 		3FD7C797201FF8B900945FEF /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				3FD7C777201FEC1300945FEF /* GameScene.sks */,
+				3FEB676E20328837003C8C39 /* GameOverScene.swift */,
+				3FEB677020328861003C8C39 /* GameOverScene.sks */,
 				3FD7C77B201FEC1300945FEF /* GameScene.swift */,
+				3FD7C777201FEC1300945FEF /* GameScene.sks */,
 				3FD7C795201FF8A600945FEF /* StartScene.sks */,
 				3FD7C798201FF96700945FEF /* StartScene.swift */,
 			);
@@ -135,6 +146,7 @@
 				3FD6DC712029301C0015B441 /* Island.swift */,
 				3FD6DC75202941210015B441 /* Cloud.swift */,
 				3FD6DC79202949910015B441 /* Distance.swift */,
+				3FEB676C20327D57003C8C39 /* Label.swift */,
 			);
 			name = Objects;
 			sourceTree = "<group>";
@@ -208,6 +220,7 @@
 				3FD7C783201FEC1300945FEF /* Assets.xcassets in Resources */,
 				3FD7C786201FEC1300945FEF /* LaunchScreen.storyboard in Resources */,
 				3FD7C790201FED3500945FEF /* engine.mp3 in Resources */,
+				3FEB677120328861003C8C39 /* GameOverScene.sks in Resources */,
 				3FD7C77A201FEC1300945FEF /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,7 +242,10 @@
 				3FD6DC76202941210015B441 /* Cloud.swift in Sources */,
 				3FD7C7A22020130500945FEF /* Ocean.swift in Sources */,
 				3FD7C79C2020054600945FEF /* GameObject.swift in Sources */,
+				3FEB676F20328837003C8C39 /* GameOverScene.swift in Sources */,
+				3FEB676B20326875003C8C39 /* ScoreManager.swift in Sources */,
 				3FD7C79E202008FD00945FEF /* GameProtocol.swift in Sources */,
+				3FEB676D20327D57003C8C39 /* Label.swift in Sources */,
 				3FD7C7A02020098C00945FEF /* Plane.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
