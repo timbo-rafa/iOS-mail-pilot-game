@@ -33,6 +33,8 @@
 		3FEB676D20327D57003C8C39 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEB676C20327D57003C8C39 /* Label.swift */; };
 		3FEB676F20328837003C8C39 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEB676E20328837003C8C39 /* GameOverScene.swift */; };
 		3FEB677120328861003C8C39 /* GameOverScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3FEB677020328861003C8C39 /* GameOverScene.sks */; };
+		3FEB677320328C28003C8C39 /* GameStartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEB677220328C28003C8C39 /* GameStartScene.swift */; };
+		3FEB677520328C3A003C8C39 /* GameStartScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3FEB677420328C3A003C8C39 /* GameStartScene.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		3FEB676C20327D57003C8C39 /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		3FEB676E20328837003C8C39 /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 		3FEB677020328861003C8C39 /* GameOverScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOverScene.sks; sourceTree = "<group>"; };
+		3FEB677220328C28003C8C39 /* GameStartScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameStartScene.swift; sourceTree = "<group>"; };
+		3FEB677420328C3A003C8C39 /* GameStartScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameStartScene.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,8 @@
 		3FD7C797201FF8B900945FEF /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				3FEB677220328C28003C8C39 /* GameStartScene.swift */,
+				3FEB677420328C3A003C8C39 /* GameStartScene.sks */,
 				3FEB676E20328837003C8C39 /* GameOverScene.swift */,
 				3FEB677020328861003C8C39 /* GameOverScene.sks */,
 				3FD7C77B201FEC1300945FEF /* GameScene.swift */,
@@ -218,6 +224,7 @@
 				3FD7C794201FEDA000945FEF /* Dock51.ttf in Resources */,
 				3FD7C778201FEC1300945FEF /* GameScene.sks in Resources */,
 				3FD7C783201FEC1300945FEF /* Assets.xcassets in Resources */,
+				3FEB677520328C3A003C8C39 /* GameStartScene.sks in Resources */,
 				3FD7C786201FEC1300945FEF /* LaunchScreen.storyboard in Resources */,
 				3FD7C790201FED3500945FEF /* engine.mp3 in Resources */,
 				3FEB677120328861003C8C39 /* GameOverScene.sks in Resources */,
@@ -237,6 +244,7 @@
 				3FD7C77E201FEC1300945FEF /* GameViewController.swift in Sources */,
 				3FD6DC722029301C0015B441 /* Island.swift in Sources */,
 				3FD7C776201FEC1300945FEF /* AppDelegate.swift in Sources */,
+				3FEB677320328C28003C8C39 /* GameStartScene.swift in Sources */,
 				3FD6DC7A202949910015B441 /* Distance.swift in Sources */,
 				3FD7C799201FF96700945FEF /* StartScene.swift in Sources */,
 				3FD6DC76202941210015B441 /* Cloud.swift in Sources */,
